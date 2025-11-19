@@ -39,6 +39,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ---
 
+## мой github репозиторий проекта [ссылка](https://github.com/illicchpv/glo-ozone-next/)
+
+
 ## Урок 5. Базовое приложение на Next [ссылка](https://glo-academy.org/next_lesson_5)
 
 > npx create-next-app@latest
