@@ -4,9 +4,8 @@ export default function RootLayout({ children }: Readonly<{
 }>) {
   return (
     <html lang="ru">
-      <body>
-        <h1>Layout</h1>
 
+      <body>
         {children}
       </body>
     </html>
