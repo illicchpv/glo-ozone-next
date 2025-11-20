@@ -3,7 +3,8 @@ import { IProduct } from "./models/product.model";
 import { IQuery } from "./models/query.model";
 
 export default async function Home({searchParams}: {searchParams: IQuery}) {
-  const products: IProduct[] = await getData( searchParams );
+  const query: IQuery = await searchParams;
+  const products: IProduct[] = await getData( query );
 
   return (
     <div className="container">
