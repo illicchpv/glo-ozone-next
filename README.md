@@ -70,6 +70,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 1) firebase API [ссылка](https://ozon-be655-default-rtdb.europe-west1.firebasedatabase.app/goods.json)
 
+- серверные и клиентские компоненты [ссылка](https://ru.nextjs.im/docs/app/getting-started/server-and-client-components) 
+    - по умолчанию серверные компоненты
+    - 'use client' - клиентские компоненты
+
 ### задание
 
 #### Базовое

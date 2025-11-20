@@ -1,4 +1,10 @@
-export default function Home() {
+import { getData } from "./actions";
+import { IProduct } from "./models/product.model";
+import { IQuery } from "./models/query.model";
+
+export default async function Home({searchParams}: {searchParams: IQuery}) {
+  const products: IProduct[] = await getData( searchParams );
+
   return (
     <div className="container">
       <div className="row">
@@ -36,24 +42,26 @@ export default function Home() {
         <div className="col-12 col-lg-9 col-xl-10">
           <div className="container">
             <div className="row no-gutters goods">
-              {/* <!-- КАРТОЧКИ ТОВАРОВ --> */}
-              {/* <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+              {products.map((product) => {
+                return (
+                  <div key={product.id} className="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div className="card">
+                      {product.sale && <div className="card-sale">🔥Hot Sale🔥</div>}
                       <div className="card-img-wrapper">
                         <span className="card-img-top"
-                          style={{ backgroundImage: "url('https://cdn1.ozone.ru/multimedia/c400/1033180284.jpg')" }}></span>
+                          style={{ backgroundImage: `url(${product.img})` }}></span>
                       </div>
                       <div className="card-body justify-content-between">
-                        <div className="card-price">33990 ₽</div>
-                        <h5 className="card-title">Игровая приставка Sony PlayStation 4 Pro</h5>
+                        <div className="card-price">{product.price} ₽</div>
+                        <h5 className="card-title">{product.title}</h5>
                         <button className="btn btn-primary">В корзину</button>
                       </div>
                     </div>
-                  </div> */}
-              {/* <!-- END КАРТОЧКИ ТОВАРОВ --> */}
+                  </div>
+                )
+              })}
             </div>
           </div>
-
         </div>
       </div>
     </div>
