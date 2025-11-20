@@ -79,3 +79,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 #### Базовое
 - Повторить код за уроком
 
+#### Сложное
+- закрытие меню фильтров при нажатии вне меню
+
+--- 
