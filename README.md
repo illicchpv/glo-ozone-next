@@ -65,3 +65,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - Повторить код за уроком
 
 ---
+
+## Урок 6. Получение и вывод данных [ссылка](https://glo-academy.org/next_lesson_6)
+
+1) firebase API [ссылка](https://ozon-be655-default-rtdb.europe-west1.firebasedatabase.app/goods.json)
+
+### задание
+
+#### Базовое
+- Повторить код за уроком
+
