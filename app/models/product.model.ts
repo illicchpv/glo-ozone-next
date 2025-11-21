@@ -5,5 +5,5 @@ export interface IProduct {
   price: number;
   sale: boolean;
   title: string;
-  count?: number;
+  // count?: number;
 }
