@@ -83,3 +83,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - закрытие меню фильтров при нажатии вне меню
 
 --- 
+
+## Урок 7. Корзина товаров [ссылка](https://glo-academy.org/next_lesson_7)
+
+### задание
+
+#### Базовое
+- Повторить код за уроком
+
+---
+
